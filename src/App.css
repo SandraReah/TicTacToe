@@ -1,0 +1,66 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #a3eeee;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.game {
+  text-align: center;
+  border: 2px solid #363636;
+  border-radius: 10px;
+  padding: 20px;
+  background-color: white;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.board {
+  display: grid;
+  grid-template-columns: repeat(3, 100px);
+  grid-gap: 10px;
+  margin: 20px auto;
+}
+
+.square {
+  width: 100px;
+  height: 100px;
+  font-size: 24px;
+  cursor: pointer;
+  background-color: #9b8e8e;
+  border: 1px solid #333;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.square:hover {
+  background-color: #d1d1d1;
+}
+
+.reset {
+  margin-top: 20px;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  background-color: #66eb6a;
+  color: white;
+  border: none;
+  border-radius: 5px;
+}
+
+.toggle-bot {
+  margin-top: 10px;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  background-color: #4a90db;
+  color: white;
+  border: none;
+  border-radius: 5px;
+}
+
+.score {
+  margin-top: 20px;
+}
